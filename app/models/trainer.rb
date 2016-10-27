@@ -4,4 +4,5 @@ class Trainer < ActiveRecord::Base
   has_many :pokemons
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+  
 end

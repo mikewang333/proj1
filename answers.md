@@ -15,9 +15,14 @@ created by "capture_path(id: @pokemon)" which maps to the ID of the Pokemon capt
 
 RubyRailsMon
 
+
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
 
+I wanted to redirect the webpage back to the trainer's profile page at the end of the damage method, so I had redirect_to the "trainer_path" using the current_trainer.id as the parameter and this will redirect the webpage back to the trainer profile after hitting the damage button and updating the database of Pokemons accordingly. 
+
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
+
+This line for erroring is put in an if/else clause, more specifically, in the case where the Pokemon cannot save to the database. This will now show the "@pokemon.errors.full_messages.to_sentence" error when we fail to create a Pokemon. 
 
 # Give us feedback on the project and decal below!
 Really enjoyed this project it was fun!

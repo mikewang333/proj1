@@ -2,16 +2,10 @@
 
 one:
   name: MyString
-  : MyString
-  level: MyString
-  : 1
-  trainer_id: MyString
-  : 1
+  level: 
+  trainer_id: 1
 
 two:
   name: MyString
-  : MyString
-  level: MyString
-  : 1
-  trainer_id: MyString
-  : 1
+  level: 
+  trainer_id: 1
