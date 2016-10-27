@@ -1,3 +1,10 @@
 <h3>Trainer</h3>
 <p>Name: <%= @trainer.name if @trainer.name %></p>
 <p>Email: <%= @trainer.email if @trainer.email %></p>
+
+<h3>Pokemon<h3>
+<% @trainer.pokemons.each do |pokemon| %>
+  <p><b><%= pokemon.name %></b></p>
+  <p><em>Level: </em><%= pokemon.level%><em></p>
+
+ <% end %>
